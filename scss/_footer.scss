@@ -1,0 +1,86 @@
+footer{
+  margin: 72px auto !important;
+  position: relative;
+  .go-back{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+  }
+  aside{
+    display: inline-block;
+    &.right{
+      float: right;
+      a{
+        span{
+          text-align: right;
+          margin-right: 20px;
+          margin-left: 0;
+        }
+        p{
+          text-align: right;
+          margin-right: 20px;
+          margin-left: 0;
+        }
+        img{
+          float: right;
+        }
+      }
+    }
+    a{
+      display:block;
+      opacity: 0.5;
+      overflow:hidden;
+      @include transition(all 0.3s ease);
+      &:hover{
+        opacity: 1;
+        span{
+          @include translate(0, 0);
+        }
+        p{
+          opacity: 1;
+          @include translate(0, 0);
+        }
+      }
+      span{
+        @include font-size(14px);
+        color: $light;
+        text-transform: uppercase;
+        display:block;
+        font-family: $semibold;
+        margin-left: 20px;
+        position: relative;
+        @include translate(0, 11px);
+        @include transition(all 0.3s ease);
+      }
+      p{
+        color: $headers;
+        font-family: $semibold;
+        margin:0;
+        margin-left: 20px;
+        position: relative;
+        opacity: 0;
+        @include translate(0, 11px);
+        @include transition(all 0.3s ease);
+      }
+      img{
+        margin: 5px 0;
+        float:left;
+      }
+    }
+  }
+  &.share{
+    text-align: center;
+    margin: -105px 0 40px 0;
+    position: relative;
+    a{
+      padding: 36px 20px;
+      display: inline-block;
+      img{
+        width: 35px;
+        height: auto;
+      }
+    }
+  }
+}

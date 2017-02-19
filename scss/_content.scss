@@ -1,0 +1,144 @@
+.work-display{
+  font-size: 0;
+  margin-top: 72px;
+  h2{
+    width: 100%;
+    display: block;
+    @include font-size(30px);
+    margin: 30px 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $border;
+  }
+  .item{
+    border-radius: 8px;
+    display: inline-block;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    &.big{
+      width: calc(50% - 18px);
+      margin-bottom: 36px;
+      &:nth-of-type(1){
+        margin-right: 36px;
+      }
+    }
+    &.small{
+      width: calc( 25% - 27px);
+      &:not(:last-child){
+        margin-right: 36px;
+      }
+    }
+  }
+}
+article{
+  border-bottom: 1px solid $border;
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+  position: relative;
+  &:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  h2{
+    @include font-size(48px);
+    margin-bottom: 20px;
+  }
+  p.date{
+    @include font-size(24px);
+  }
+  a{
+    color: $blue-grey;
+    text-decoration: none;
+    @include font-size(24px);
+    img{
+      width: 26px;
+      height: auto;
+      margin-left: 10px;
+    }
+  }
+}
+
+figure{
+  width: 100%;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  &.gif{
+    position: relative;
+    *:nth-child(1){
+      width: 320px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+    *:nth-child(2){
+      width: 267px;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include translate(-50%, -50%);
+    }
+  }
+  &.follow-up{
+    margin-bottom: 72px;
+  }
+  &.multiple{
+    text-align:center;
+    img{
+      width: 320px;
+      height: auto;
+      margin: 0 56px 56px 0;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  &.multiple-begin{
+    img:nth-of-type(3){
+      margin-right: 0;
+    }
+  }
+  &.single-begin{
+    img:first-child{
+      display: block;
+      margin: 0 auto 56px auto;
+    }
+  }
+}
+
+.mijn-kop{
+  margin: 0 auto;
+  figure{
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 72px;
+    width: 72px;
+    background-color: #d8d8d8;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  aside{
+    margin-left: 100px;
+    p{
+      color: #000;
+      @include font-size(28px);
+      span{
+        display: block;
+        @include font-size(24px);
+        color: #7c7d7f;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+iframe{
+  width: 400px;
+  height: 810px;
+  display: block;
+  margin: 0 auto;
+}

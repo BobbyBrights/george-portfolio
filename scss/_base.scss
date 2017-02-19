@@ -1,0 +1,148 @@
+body{
+  color: $tekst;
+  font-family: $blond;
+}
+
+h1, h2, h3{
+  color: $headers;
+  font-family: $medium;
+}
+
+p{
+  @include font-size(18px);
+  margin-bottom: 36px;
+  font-family: $blond;
+  line-height: 27px;
+}
+
+a{
+  color: $tekst;
+  text-decoration: none;
+}
+ol{
+  list-style: decimal;
+  padding-left: 30px;
+  margin-top: -16px;
+  line-height: 27px;
+  &.strong{
+    font-family: $medium;
+  }
+  li{
+    padding-left: 10px;
+  }
+}
+blockquote{
+  display: block;
+  padding-left: 10px;
+  margin-left: -10px;
+  border-left: 4px solid #000;
+  font-family: $blonditalic;
+  @include font-size(18px);
+  line-height: 27px;
+}
+q{
+  @include font-size(36px);
+  color: $tekst;
+  font-family: $blonditalic;
+  margin-bottom: 36px;
+  white-space: nowrap;
+  display: block;
+  position: absolute;
+  left: 50%;
+  @include translate(-50%, 0);
+}
+
+strong{
+  font-family: $medium;
+}
+
+.container{
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+figure.small-container{
+  margin-top:0;
+}
+.small-container{
+  width: 600px;
+  margin: 72px auto 0px auto;
+  > a{
+    @include font-size(14px);
+    img{
+      width: 26px;
+      height: auto;
+      margin-left: 10px;
+    }
+  }
+}
+
+.backtekst{
+  color: $backtekst;
+  @include font-size(298px);
+  font-family: $medium;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  white-space: nowrap;
+  @include translate(-50%, -50%);
+}
+
+.biggass-text{
+  width: 100%;
+  height: 350px;
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn{
+  color: rgba($tekst, 0.5);
+  font-family: $semibold;
+  @include font-size(16px);
+  text-decoration: none;
+  text-transform: uppercase;
+  @include transition(all 0.3s ease);
+  &:hover{
+    color: #000;
+  }
+}
+
+figure.post-end{
+  padding-bottom: 108px;
+}
+.post-end{
+  margin-bottom: 36px;
+  border-bottom: 1px solid $border;
+}
+.begin{
+  margin-top: 72px;
+}
+
+.follow-up{
+  border: none;
+  margin-bottom: 0;
+}
+
+.kutquote{
+  color: transparent;
+}
+
+.mobile{
+  width: 375px;
+  margin-top: 72px !important;
+}
+
+.a-link{
+  @include font-size(18px);
+  color: #4a90e2;
+  border-bottom: 1px solid #4a90e2;
+}
