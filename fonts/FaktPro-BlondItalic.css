@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'FaktPro-BlondItalic';
+  src: url('FaktPro-BlondItalic.eot?#iefix') format('embedded-opentype'),  url('FaktPro-BlondItalic.otf')  format('opentype'),
+	     url('FaktPro-BlondItalic.woff') format('woff'), url('FaktPro-BlondItalic.ttf')  format('truetype'), url('FaktPro-BlondItalic.svg#FaktPro-BlondItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
